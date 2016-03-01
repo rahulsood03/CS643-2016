@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Assignment 2</title>
+<link href="stylesheets/assgn2.css" rel="stylesheet" type="text/css"></link>
+<script type="text/javascript">
+function changeImage1() 
+{
+if (document.getElementById("changer").src=="http://wallpapersdsc.net/wp-content/uploads/2015/10/Captain_America_16.jpg") 
+document.getElementById("changer").src="http://images-cdn.moviepilot.com/images/c_fill,h_1520,w_2476/t_mp_quality/aay0jiymyu95rdrgsu2s/we-finally-have-a-release-date-for-the-captain-america-civil-war-trailer-686427.jpg"
+else 
+document.getElementById("changer").src="http://wallpapersdsc.net/wp-content/uploads/2015/10/Captain_America_16.jpg"
+}
+function changeImage2() { 
+var image = document.getElementById('myImage2');
+if(image.src=="http://www.ubaidsheikh.com/wp-content/uploads/2016/02/thor-avengers-age-of-ultron-wallpaper-4230.jpg") 
+image.src="http://www.sideshowtoy.com/wp-content/uploads/2014/09/300378_press02-900x600.jpg"
+else image.src="http://www.ubaidsheikh.com/wp-content/uploads/2016/02/thor-avengers-age-of-ultron-wallpaper-4230.jpg"
+}
+</script>
+</head>
+<body>
+<h1><em>Avengers</em></h1>
+    
+<br></br>
+
+<div class="Captain America" id="linear-gradient">
+        Captain America
+<hr></hr>
+<img id="changer" onclick="changeImage1()" src="http://wallpapersdsc.net/wp-content/uploads/2015/10/Captain_America_16.jpg" />
+<br></br>
+<p>Click on picture to change..</p>
+</div>
+
+<br></br>
+
+<div class="Thor" id="linear-gradient">
+    Thor
+    <hr></hr>
+<img id="myImage2" onclick="changeImage2()" src="http://www.ubaidsheikh.com/wp-content/uploads/2016/02/thor-avengers-age-of-ultron-wallpaper-4230.jpg" />
+<br></br>
+<p>Click on picture to change..</p>
+</div>
+    
+</body>
+</html>

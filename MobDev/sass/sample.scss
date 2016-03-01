@@ -1,0 +1,29 @@
+@import "compass";
+@import "compass/reset";
+
+$boxWidth:500 px;
+$font-stack:    Helvetica, sans-serif;
+$primary-color: darken(cyan,20%);
+
+div
+	{
+	height:$boxWidth;
+	width:$boxWidth;
+	margin: 10px*2;
+	background-color: lighten(red,20%);
+	font-size: 50px;
+	border-radius: 25px;
+	box-shadow: 60px -16px teal;
+	text-shadow: 6px 6px #ff0000;
+}
+
+.coolGradient{
+	@include background-image(linear-gradient(to top left,white,#0044cc));
+} 
+
+
+body{
+	background-color: $primary-color;
+	text-align:center;
+	font: 100% $font-stack;
+}

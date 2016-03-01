@@ -1,0 +1,38 @@
+/* line 1, ../sass/c4.scss */
+section {
+  display: flex;
+}
+
+/* line 4, ../sass/c4.scss */
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+/* line 8, ../sass/c4.scss */
+.rahul {
+  background-color: aquamarine;
+  font-size: 25px;
+  flex: 3;
+}
+
+/* line 13, ../sass/c4.scss */
+.rahul2 {
+  background-color: burlywood;
+  font-size: 25px;
+  flex: 7;
+}
+
+/* line 18, ../sass/c4.scss */
+.rahul3 {
+  background-color: cadetblue;
+  font-size: 25px;
+  flex: 1;
+}
+
+/* line 23, ../sass/c4.scss */
+img {
+  height: 700px;
+  width: 800px;
+  order: -1;
+}

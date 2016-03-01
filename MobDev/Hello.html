@@ -1,0 +1,46 @@
+<html>
+<head>
+</head>
+<body>
+	<script>
+	function OnButtonclick() {
+	//alert("hello!!");
+	var newurl=document.getElementById("theinput").value;
+	var disimg=document.getElementById("movableimg");
+	disimg.src=newurl;
+	console.log("@@@@");
+	}
+	</script>
+<style>
+body{
+color: #942810;
+background-color:cyan;
+}
+#movableimg{
+position: absolute;
+top:150px;
+left: 400px;
+height:500px;
+width:500px;
+}
+#theinput{
+	color: red;
+}
+button{
+border:1px; solid:#942810;
+}
+</style>
+<h1>TEST PAGE</h1>
+<form>
+<label for="theinput">Enter image URL:</label>
+<input type="text" id="theinput">
+<br>
+<button onClick="OnButtonclick()" return false>Click</button>
+</form>
+	<p>Hello World!! How are you?? I am <i>good!!</i></p>
+	<div style="padding:10px"> 
+	<img src="http://www.brandbox.io/wp-content/uploads/2015/07/New-York-1.jpg" Id="movableimg">
+	</div>
+	<p><h2>New York</h2></p>
+</body>
+</html>

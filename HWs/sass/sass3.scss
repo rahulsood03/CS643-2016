@@ -1,0 +1,76 @@
+@import "compass";
+@import "compass/reset";
+
+$padConstant: 20px;
+
+
+
+
+section {    
+    display: flex;
+	flex-flow:row wrap; // without this they will all be on one wide row
+	justify-content: space-between;
+}
+
+.navbar {
+        background-color:darkgrey;
+        border-style: solid;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 30px;
+        background: linear-gradient(blue, yellow);
+    }
+
+h1 {
+    text-align: left;
+    font-size: 45px;
+    font-weight: bold;
+    color: dodgerblue;
+    text-shadow: 2px 2px 5px #898989;
+    transform: rotateX(360deg);
+}
+.leftSide {
+    font-size: 150%;
+    color: #276E90;
+    font-family: 'Raleway' sans-serif;
+    margin: 15px, 0;
+    
+}
+div #firstcol {
+    flex: 1;
+    
+}
+div #secondcol {
+    flex: 3;
+}
+div #thirdcol {
+    flex: 2;
+}
+div #fourthcol {
+    flex: 3;
+}
+img {
+    height: 300px;
+    width: 300px;
+} 
+#left {
+    flex: 1;
+    min-width:200px;
+    padding: 20px;
+}
+#center {
+    flex: 1;
+    min-width:200px;
+    padding: 20px;
+}
+#right {
+    flex: 1;
+    min-width:200px;
+    padding: 20px;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+     .navbar: linear-gradient(blue, yellow);
+	
+}

@@ -1,0 +1,43 @@
+@import "compass";
+@import "compass/reset";
+
+img{
+    height:400px;
+    width:700px;
+}
+
+p {
+    font-size:25px;
+}
+div {
+    background-color: cornflowerblue;
+    border-radius:25px;
+    box-shadow: 6px 2px #A9A9A9;
+    margin: 30px;
+    height: 500px;
+    width: 300px;
+    
+}
+
+body {
+    background-color:cadetblue;
+    text-align: center;
+    font: 40px sans-serif;
+    color:red;
+    border-radius: 25px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 4px 4px #A9A9A9;
+    
+}
+
+#linear-gradient{
+  @include background-image(linear-gradient(to bottom right, red, blue, orange));
+  font-size:15px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
