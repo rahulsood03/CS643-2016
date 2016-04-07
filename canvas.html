@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Homework-7</title>
+    <meta name="viewport" content="width=device-width"></meta>
+    <meta name="viewport" content="initial-scale=0.5"></meta>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js">
+  	</script>
+    <style>
+        body{
+            margin: 0;
+            padding: 10px;
+            background-color:firebrick  ;
+        }
+        button{
+             height: 50px;
+            width: 90px;
+        }
+        
+    </style>
+</head>
+    <body>
+        <div id="container">
+        <button id="red" onclick="changeColor('red')">RED</button>
+        <button id="blue" onclick="changeColor('blue')">BLUE</button>
+        <button id="green" onclick="changeColor('green')">GREEN</button>
+        <button id="yellow" onclick="changeColor('yellow')">YELLOW</button>
+        <button id="black" onclick="changeColor('black')">BLACK</button>
+        <button id="small" onclick="smallSize()">SMALL</button>
+        <button id="large" onclick="largeSize()">LARGE</button>
+        <button id="clear" onclick="clearCanvas()">CLEAR</button>
+         </div>
+
+        <canvas id="c" width="1440" height="771">
+        </canvas>
+   <script>
+
+   var canvas = document.getElementById("c");
+   canvas.width = window.innerWidth;
+   canvas.height = window.innerHeight;
+
+   var c = canvas.getContext("2d");
+   c.fillStyle = "white";
+
+   var brush = 30;
+   function drawSquare(x, y) {
+     c.fillRect(x, y, brush, brush);
+   }
+
+   document.ontouchmove = function(e) {
+     e.preventDefault();
+     for (var n=0; n<e.touches.length; n++) {
+       drawSquare(e.touches[n].pageX, e.touches[n].pageY);
+     }
+   }
+
+   document.onmousemove = function(e) {
+     drawSquare(e.clientX, e.clientY);
+   }
+
+
+   function changeColor(color){
+     c.fillStyle = color;
+   }
+
+   function smallSize(){
+     brush = 10;
+   }
+
+   function largeSize(){
+     brush = 70;
+   }
+
+   function clearCanvas(){
+     c.clearRect(0, 0, canvas.width, canvas.height);
+   }
+
+
+  </script>
+
+
+    
+    </body>
+</html>
